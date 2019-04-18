@@ -1,0 +1,22 @@
+{
+  "name": "react-boiler",
+  "version": "1.0.0",
+  "description": "minimal react boilerplate with most features",
+  "main": "index.js",
+  "repository": "https://github.com/sumitjoshi97/react-boiler.git",
+  "author": "Sj",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-merge": "^4.2.1"
+  }
+}
