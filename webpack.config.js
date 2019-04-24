@@ -43,14 +43,21 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-        options: {
+            options: {
               name: '[name].[ext]',
               outputPath: 'static/assets'
-                }
-              }
-            ]
+            }
+          }
+        ]
       }
     ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public', 'index.html')
+    }),
+    new MiniCssExtractPlugin({ filename: 'static/css/[name].css' })
+  ],
   resolve: {
     extensions: ['.js', '.json', '.jsx']
   }
