@@ -6,16 +6,10 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'static/js/main.js',
+    chunkFilename: 'static/js/[name].chunk.js',
+    path: path.resolve(__dirname, 'dist')
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'public', 'index.html')
-    }),
-    new MiniCssExtractPlugin({ filename: '[name].css' })
-  ],
   module: {
     rules: [
       {
@@ -45,13 +39,13 @@ module.exports = {
       },
       {
         // file-loader to copy image files to assets folder in destination folder
-        test: /\.(svg|png|jpg|jpeg|bmp|gif|ico)$/,
+        test: /\.(svg|png|jpg|jpeg|gif|mp3|ico)$/,
         use: [
           {
             loader: 'file-loader',
         options: {
-              name: '[name].[hash].[ext]',
-              outputPath: 'assets'
+              name: '[name].[ext]',
+              outputPath: 'static/assets'
                 }
               }
             ]
