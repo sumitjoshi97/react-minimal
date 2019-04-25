@@ -1,12 +1,12 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const merge = require('webpack-merge')
+const base = require('./webpack.config.base')
 
-module.exports = {
+module.exports = merge(base, {
   mode: 'development',
   devtool: 'cheap-module-source-map',
-  entry: './src/index.js',
   output: {
     filename: 'static/js/main.js',
     chunkFilename: 'static/js/[name].chunk.js',
@@ -14,16 +14,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        include: /src/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.html$/,
-        loader: 'html-loader',
-        exclude: /node_modules/
-      },
       {
         // css-loader
         test: /\.css$/,
@@ -53,14 +43,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html')
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin({ filename: 'static/css/[name].css' })
+    new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     contentBase: './dist',
     hot: true
-  },
-  resolve: {
-    extensions: ['.js', '.json', '.jsx']
   }
-}
+})
