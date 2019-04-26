@@ -1,0 +1,14 @@
+// reset browser style
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+}
