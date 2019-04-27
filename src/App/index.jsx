@@ -7,6 +7,7 @@ export default class App extends Component {
       <div className='app'>
         <h2>Minimal React Boiler</h2>
         <img src={require('../assets/logo.png')} alt='react boiler' />
+        <footer>developed and maintained by @Sj</footer>
       </div>
     )
   }
