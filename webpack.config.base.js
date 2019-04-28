@@ -14,15 +14,23 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        enforce: 'pre',
         include: /src/,
-        loader: 'babel-loader'
+        loader: 'eslint-loader',
+        options: {
+          emitWarning: process.env.NODE_ENV !== 'production',
+        },
+      },
+      {
+        test: /\.(js|jsx)$/,
+        include: /src/,
+        loader: 'babel-loader',
       },
       {
         test: /\.html$/,
         loader: 'html-loader',
-        exclude: /node_modules/
-      }
-    ]
+      },
+    ],
   },
   plugins: [new DotenvPlugin()],
 
