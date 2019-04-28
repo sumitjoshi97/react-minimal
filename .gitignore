@@ -1,3 +1,11 @@
+# npm packages
 node_modules/
+
+# developemnt code folder
 dist/
+
+# production code folder
 build/
+
+# environment variable files
+.env
