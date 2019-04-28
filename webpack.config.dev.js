@@ -41,9 +41,9 @@ module.exports = merge(base, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'public', 'index.html')
+      favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     contentBase: './dist',
