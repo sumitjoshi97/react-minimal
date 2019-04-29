@@ -10,37 +10,38 @@ module.exports = merge(base, {
   output: {
     filename: 'static/js/main.js',
     chunkFilename: 'static/js/[name].chunk.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         // css-loader
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         // sass/scss loader to load sass-scss style files
         test: /\.(sass|scss)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
-        // file-loader to copy image files to assets folder in destination folder
+        // copies image files to assets folder in destination folder - dist
         test: /\.(svg|png|jpg|jpeg|gif|mp3|ico)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'static/assets'
-            }
-          }
-        ]
-      }
-    ]
+              outputPath: 'static/assets',
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public', 'index.html'),
       favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
     }),
     new webpack.HotModuleReplacementPlugin(),

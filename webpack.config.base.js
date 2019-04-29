@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'static/js/main.js',
     chunkFilename: 'static/js/[name].chunk.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -35,6 +35,6 @@ module.exports = {
   plugins: [new DotenvPlugin()],
 
   resolve: {
-    extensions: ['.js', '.json', '.jsx']
-  }
+    extensions: ['.js', '.json', '.jsx'],
+  },
 }
