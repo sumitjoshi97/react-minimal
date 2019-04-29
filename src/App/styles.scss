@@ -1,6 +1,46 @@
 .app {
-  background: linear-gradient(to bottom, #0073f7, #3a09ac);
+  background: linear-gradient(to bottom, #2c87f0, #4518ad);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   h2 {
-    font-size: 30px;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 140px;
+  }
+
+  a {
+    font-size: 20px;
+    padding: 10px 14px;
+    margin-top: 20px;
+    background: transparent;
+    border: 1.4px solid #2c87f0;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background 0.1s linear;
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1.4px solid #fff;
+      color: #00438f;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 12px;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.45);
   }
 }
