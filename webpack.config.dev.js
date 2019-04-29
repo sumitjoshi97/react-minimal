@@ -46,7 +46,24 @@ module.exports = merge(base, {
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: './dist',
-    hot: true
-  }
+    contentBase: path.resolve(__dirname, 'dist'),
+    port: 3000,
+    hot: true,
+    stats: {
+      colors: true,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      modules: false,
+      reasons: false,
+      children: false,
+      source: false,
+      errors: true,
+      errorDetails: true,
+      warnings: true,
+      publicPath: false,
+    },
+  },
 })
