@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react", "prettier"],
+  "plugins": ["react", "jest", "prettier"],
   "extends": ["airbnb", "plugin:react/recommended", "prettier"],
   "globals": {
     "React": true,
@@ -46,6 +46,14 @@
     "no-return-assign": 0,
     "new-cap": 0,
     "no-mixed-operators": 0,
-    "prettier/prettier": 2
+    "prettier/prettier": 2,
+    "jest/no-disabled-tests": 1,
+    "jest/no-focused-tests": 2,
+    "jest/no-identical-title": 2,
+    "jest/prefer-to-have-length": 1,
+    "jest/valid-expect": 2
+  },
+  "env": {
+    "jest": true
   }
 }
