@@ -9,6 +9,8 @@
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --open",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
     "build": "webpack --config webpack.config.prod.js"
   },
   "dependencies": {
