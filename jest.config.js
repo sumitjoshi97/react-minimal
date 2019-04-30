@@ -2,7 +2,7 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.{js|jsx}'],
   coverageDirectory: 'coverage',
   moduleFileExtensions: ['js', 'json', 'jsx'],
-  setupFiles: ['<rootDir>/setupTests.js'],
+  setupFiles: ['<rootDir>/src/setupTests.js'],
   testEnvironment: 'jsdom',
   testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],
   testPathIgnorePatterns: ['\\\\node_modules\\\\'],
