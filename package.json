@@ -21,11 +21,9 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "src/**/*.{js,jsx}": [
-        "yarn lint"
-      ]
-    }
+    "src/**/*.{js,jsx}": [
+      "yarn lint"
+    ]
   },
   "dependencies": {
     "react": "^16.8.6",
