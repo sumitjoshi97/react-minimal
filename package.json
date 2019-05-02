@@ -10,8 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --open",
     "lint": "eslint --cache --format codeframe --ext js,jsx src",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --watch",
     "test:coverage": "jest --coverage --colors",
     "build": "webpack --config webpack.config.prod.js"
   },
