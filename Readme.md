@@ -1,6 +1,6 @@
 # React-Minimal
 
-Minimal React Boilerplate with most features
+Minimal React Boilerplate with most features.
 
 ## Table of Contents
 
@@ -8,38 +8,31 @@ Minimal React Boilerplate with most features
 - [Installation](#installation)
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
-  - [yarn start](#yarn-start)
-  - [yarn lint](#yarn-lint)
-  - [yarn test](#yarn-test)
-  - [yarn test:watch](#yarn-test:watch)
-  - [yarn test:coverage](#yarn-test:coverage)
-  - [yarn build](#yarn-build)
 - [Issues and Bugs](#issues-and-bugs)
 
 ## Features
 
-- React 16
-- React Router
-- Webpack 4
-- Babel 7
-- SASS/SCSS support
-- Postcss Support
-- Environment Variables
-- SourceMaps
-- Hot Reloading
-- Linting with airbnb config
-- Commit Hooks
-- Production code optimization
-- Jest/Enzyme Testing
+- ⚛ React 16
+- 🌐 React Router
+- 🚀 Webpack 4
+- 🛠 Babel 7
+- 🌈 SASS/SCSS support
+- 🔄 Hot Reloading
+- 🎨 Linting with airbnb config
+- ✏️ Commit Hooks to prevent bad commits
+- ✅ Jest/Enzyme Testing
+- ⚡️ Production code optimization
 
 ## Installation
 
-1. git clone https://github.com/sumitjoshi97/react-boiler.git
-2. cd react-boiler
-3. yarn
-4. yarn start
+1. Clone repo using `git clone https://github.com/sumitjoshi97/react-boiler.git`
+2. Move to directory: `cd react-boiler`
+3. Run `yarn` or `npm install` for installing dependencies
+4. Run `yarn start` to start project
 
 ## Folder Structure
+
+After installation, your project should look like this :
 
 ```
 react-boiler/
@@ -75,37 +68,20 @@ You can change prettier config as per your preferences in **.prettierrc** file.
 
 You can change linter config in **.eslintrc** file.
 
-You can change jest config such as collectcoverageFrom, coverageDirectory in **jest.config.js**
+You can change jest config in **jest.config.js** file.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `yarn start` - Runs app in development mode. Open [localhost:3000](http://localhost:3000) to view it in browser.
 
-### `yarn start`
+- `yarn lint` - Checks for linting errors
 
-Runs the app in development mode.
-Open [localhost:3000](http://localhost:3000) in browser.
+- `yarn test` - Launches test runner in watch mode
 
-### `yarn lint`
+- `yarn test:coverage` - Provides test coverage report for all tests
 
-Checks the app for linting errors
-
-### `yarn test`
-
-Runs tests for once
-
-### `yarn test:watch`
-
-Runs test in watch mode, so jest watch changes in test files
-
-### `yarn test:coverage`
-
-Provides coverage report of tests run
-
-### `yarn build`
-
-Output the optimized production code
+- `yarn build` - Builds production ready code
 
 ## Issues and Bugs
 
-If you find any issues or bugs while using this boilerplate, you can raise an issue in **https://github.com/sumitjoshi97/issues**
+If you find any issues or bugs while using this boilerplate, you can raise an issue in **https://github.com/sumitjoshi97/react-boiler/issues**.
