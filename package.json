@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/sumitjoshi97/react-boiler.git",
   "author": "Sj",
-  "license": "ISC",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --open",
