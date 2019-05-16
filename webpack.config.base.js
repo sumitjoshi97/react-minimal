@@ -1,13 +1,7 @@
-const path = require('path')
 const DotenvPlugin = require('dotenv-webpack')
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    filename: 'static/js/main.js',
-    chunkFilename: 'static/js/[name].chunk.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   module: {
     rules: [
       {
