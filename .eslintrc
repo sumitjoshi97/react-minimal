@@ -2,6 +2,11 @@
   "parser": "babel-eslint",
   "plugins": ["react", "jest", "prettier"],
   "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
   "globals": {
     "React": true,
     "document": true,
@@ -52,8 +57,5 @@
     "jest/no-identical-title": 2,
     "jest/prefer-to-have-length": 1,
     "jest/valid-expect": 2
-  },
-  "env": {
-    "jest": true
   }
 }
