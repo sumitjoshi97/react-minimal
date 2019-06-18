@@ -19,7 +19,7 @@ Minimal React Boilerplate with most features.
 - 🌈 SASS/SCSS support
 - 🔄 Hot Reloading
 - 🎨 Linting with airbnb config
-- ✏️ Commit Hooks to prevent bad commits
+- 🐶 Commit Hooks to prevent bad commits
 - ✅ Jest/Enzyme Testing
 - ⚡️ Production code optimization
 
@@ -54,7 +54,7 @@ react-boiler/
     index.html
     favicon.ico
   src/
-    app/
+    App/
       index.jsx
       styles.scss
     assets/
